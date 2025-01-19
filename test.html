@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nafscure</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <style>
+    body {
+      font-family: 'times new romman', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    /* Hero Section with Video Background */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 20%;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #fff;
+      padding: 40px 0;
+      border-top: 1px solid #eee;
+    }
+
+    .footer .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info h4,
+    .newsletter h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .contact-info p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info p i {
+      margin-right: 10px;
+      color: #ff7f50;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+    }
+
+    .newsletter-form input {
+      padding: 10px;
+      font-size: 0.9rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 250px;
+      transition: border-color 0.3s ease;
+    }
+
+    .newsletter-form input:focus {
+      border-color: #ff7f50;
+      outline: none;
+    }
+
+    .newsletter-form button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #fff;
+      background-color: #ff7f50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .newsletter-form button:hover {
+      background-color: #ff6347;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info p {
+        justify-content: center;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .newsletter-form input {
+        width: 100%;
+      }
+
+      .newsletter-form button {
+        width: 100%;
+      }
+    }
+  </style>
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <link rel="stylesheet" type="text/css" href="css/glightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+
+
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="imgs/dummy_logo.png" alt="" style="width: auto; height: 200px;">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="who-we-are.html">Who We Are</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="mailto:info@nafscure.com">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section with Video Background -->
+    <section id="hero" class="hero section dark-background">
+      <video autoplay muted loop id="hero-video">
+        <source src="assets/videos/mental-health-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <h2 data-aos="fade-up" data-aos-delay="100">Improving Mental Health<br>for the Youth in Morco</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Empowering the next generation through mental health awareness and education.</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="#counts" class="btn-get-started">Start Learning</a>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-image">
+              <img src="imgs/about.jpg" class="img-fluid" alt="About Us">
+            </div>
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Our Mission</h3>
+            <p class="fst-italic">
+              We are dedicated to improving the mental health of young people in Morco through education, support, and community engagement.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Providing accessible mental health resources.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Hosting workshops and events to raise awareness.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Offering courses to educate and empower the youth.</span></li>
+            </ul>
+            <a href="who-we-are.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Counts Section -->
+    <section id="counts" class="section counts light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Students</p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Courses</p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Events</p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Trainers</p>
+            </div>
+          </div><!-- End Stats Item -->
+        </div>
+      </div>
+    </section><!-- /Counts Section -->
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Courses</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="course-card">
+              <div class="content">
+                <h3><a href="course-details.html">Mental Health Basics</a></h3>
+                <p class="category">Education</p>
+                <p class="price">Free</p>
+              </div>
+            </div>
+          </div> <!-- End Course Card -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="course-card">
+              <div class="content">
+                <h3><a href="course-details.html">Stress Management</a></h3>
+                <p class="category">Wellness</p>
+                <p class="price">Free</p>
+              </div>
+            </div>
+          </div> <!-- End Course Card -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="course-card">
+              <div class="content">
+                <h3><a href="course-details.html">Mindfulness Techniques</a></h3>
+                <p class="category">Wellness</p>
+                <p class="price">Free</p>
+              </div>
+            </div>
+          </div> <!-- End Course Card -->
+        </div>
+      </div>
+    </section><!-- /Courses Section -->
+
+    <!-- Trainers Index Section -->
+    <section id="trainers-index" class="section trainers-index">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Team</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-client">
+              <div class="user-picture">
+                <img src="imgs/trainer-1.jpg" alt="Walter White" class="img-fluid">
+              </div>
+              <p class="name-client">Walter White
+                <span>Web Development</span>
+              </p>
+              <div class="social-media">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                  </svg>
+                  <span class="tooltip-social">Twitter</span>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                  </svg>
+                  <span class="tooltip-social">Instagram</span>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                  </svg>
+                  <span class="tooltip-social">Facebook</span>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                  </svg>
+                  <span class="tooltip-social">LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <!-- Add more team members as needed -->
+        </div>
+      </div>
+    </section><!-- /Trainers Index Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="contact-info">
+          <h4>Contact Us</h4>
+          <p><i class="bi bi-geo-alt"></i> 123 Main Street, City, Country</p>
+          <p><i class="bi bi-envelope"></i> info@nafscure.com</p>
+          <p><i class="bi bi-phone"></i> +123 456 7890</p>
+        </div>
+        <div class="newsletter">
+          <h4>Subscribe to Our Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <script src="js/purecounter_vanilla.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
